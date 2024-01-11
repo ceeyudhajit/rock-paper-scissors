@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+</head>
+<body>
+    <p>rock,paper and scissors.</p>
+    <button type="button" onclick="
+        const a = ['rock','paper','scissors'];
+        pick = Math.floor(Math.random()*3 + 1);
+        console.log(pick);
+        if(pick==2){console.log(`computer wins, computer throws ${a[pick-1]}`);}
+        else{
+            console.log('you win');
+        }
+    ">Rock</button>
+    <button type="button" onclick="
+        a = ['rock','paper','scissors'];
+        pick = Math.floor(Math.random()*3 + 1);
+        console.log(pick);
+        if(pick==3){console.log(`computer wins, computer throws ${a[pick-1]}`);}
+        else{
+            console.log('you win');
+        }
+    ">Paper</button>
+    <button type="button" onclick="
+        a = ['rock','paper','scissors'];
+        pick = Math.floor(Math.random()*3 + 1);
+        console.log(pick);
+        if(pick==1){console.log(`computer wins, computer throws ${a[pick-1]}`);}
+        else{
+            console.log('you win');
+        }
+    ">Scissors</button>
+</body>
+<script src="index.js">
+    let pick = 0;
+    
+</script>
+</html>
