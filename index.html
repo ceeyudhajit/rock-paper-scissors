@@ -33,24 +33,24 @@
         function computerPicksOne(choice){
             pick = Math.floor(Math.random()*3 + 1);
             if(choice==pick){
-                alert("Your Choice : " +a[choice-1]+",Computer Choice : "+a[pick-1]+",Draw! Score : Wins - "+score.wins+" Losses - "+score.losses+" Ties - "+score.ties);
                 score.ties+=1;
+                alert("Your Choice : " +a[choice-1]+",Computer Choice : "+a[pick-1]+",Draw! Score : Wins - "+score.wins+" Losses - "+score.losses+" Ties - "+score.ties);
             }
             else if(choice==1 && pick==2){
-                alert("Your Choice : " +a[choice-1]+",Computer Choice : "+a[pick-1]+",You Loose  Score : Wins - "+score.wins+" Losses - "+score.losses+" Ties - "+score.ties);
                 score.losses+=1;
+                alert("Your Choice : " +a[choice-1]+",Computer Choice : "+a[pick-1]+",You Loose  Score : Wins - "+score.wins+" Losses - "+score.losses+" Ties - "+score.ties);
             }
             else if(choice==2 && pick==3){
-                alert("Your Choice : " +a[choice-1]+",Computer Choice : "+a[pick-1]+",You Loose  Score : Wins - "+score.wins+" Losses - "+score.losses+" Ties - "+score.ties);
                 score.losses+= 1;
+                alert("Your Choice : " +a[choice-1]+",Computer Choice : "+a[pick-1]+",You Loose  Score : Wins - "+score.wins+" Losses - "+score.losses+" Ties - "+score.ties);
             }
             else if(choice==3 && pick==1){
-                alert("Your Choice : " +a[choice-1]+",Computer Choice : "+a[pick-1]+",You Loose  Score : Wins - "+score.wins+" Losses - "+score.losses+" Ties - "+score.ties);
                 score.losses+=1;
+                alert("Your Choice : " +a[choice-1]+",Computer Choice : "+a[pick-1]+",You Loose  Score : Wins - "+score.wins+" Losses - "+score.losses+" Ties - "+score.ties);
             }
             else{
-                alert("Your Choice : " +a[choice-1]+",Computer Choice : "+a[pick-1]+",You Win  Score : Wins - "+score.wins+" Losses - "+score.losses+" Ties - "+score.ties);
                 score.wins+=1;
+                alert("Your Choice : " +a[choice-1]+",Computer Choice : "+a[pick-1]+",You Win  Score : Wins - "+score.wins+" Losses - "+score.losses+" Ties - "+score.ties);
             }
             console.log(score);
             localStorage.setItem('score',JSON.stringify(score));
