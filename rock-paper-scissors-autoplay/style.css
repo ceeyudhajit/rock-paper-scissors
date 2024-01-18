@@ -1,0 +1,64 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+.heading{
+    text-align: center;
+    margin: 20px;
+    color: #fabf36;
+}
+
+.playbutton{
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.rps-button{
+    padding:50px;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.choice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.decision{
+    color: #fabf36;
+}
+
+.score-reset{
+    background-color: #fabf36;
+    padding: 20px;
+    margin:20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 2rem;
+}
+
+.choice img{
+    width : 50px;
+    padding : 0 10px;
+}
+
+.choice p{
+    font-size: 20px;
+}
+
+.auto-play{
+    background-color: #fabf36;
+    padding: 20px;
+    margin:20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 2rem;
+}
